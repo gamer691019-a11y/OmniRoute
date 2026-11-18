@@ -321,7 +321,7 @@ ENTRYPOINT ["/app/check-permissions.sh"]
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
   CMD ["node", "healthcheck.mjs"]
 
-CMD ["node", "dev/run-standalone.mjs"]
+CMD ["node", "./dev/run-standalone.mjs"]
 
 # ── Runner Web (web-cookie providers: Gemini Web, Claude Turnstile) ───────────
 #
